@@ -8,7 +8,6 @@ export default class TodoItemsContainer extends Component {
     super()
     this.state = {
       items: [],
-      editingMode: false,
     }
   }
 
@@ -47,7 +46,7 @@ export default class TodoItemsContainer extends Component {
   }
 
   render = () => {
-    const { items, editingMode } = this.state;
+    const { items } = this.state;
     return (
       <section>
         <AddItemBtn addItem={this.addNewItem} />
@@ -58,8 +57,6 @@ export default class TodoItemsContainer extends Component {
               key={item.id}
               id={item.id}
               removeItem={this.removeItem}
-              editingMode={editingMode}
-              editTitle={this.editTitle}
               onTitleChange={this.handleTitleChange}
             />
           )
