@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="item clearfix"
+>
+  <div
+    className="title"
+  >
+    <input
+      defaultValue="Test"
+      onChange={[Function]}
+    />
+  </div>
+  <button
+    className="removeBtn"
+    onClick={[Function]}
+    type="button"
+  />
+</div>
+`;
